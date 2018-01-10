@@ -25,8 +25,11 @@ import colors from '@/runner/colors'
 const UsingText= (props)=>{
   return (
     <View style={styles.container}>
-      <Text>Using</Text>
-      <Text>Text</Text>
+      <Text style={{fontSize:100, fontFamily:'AmericanTypewriter'}}>Using</Text>
+      <Text style={{fontSize:100, letterSpacing:-20, fontFamily:'Baskerville', fontStyle:'italic', color:'white'}}>
+        T
+        <Text style={{fontSize:60,letterSpacing:0}}>ext</Text>
+      </Text>
     </View>
   )
 }

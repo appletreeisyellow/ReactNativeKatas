@@ -25,11 +25,16 @@ const Alignment= (props)=>{
   return (
     <View style={styles.container}>
       <Box/>
-      <Box/>
-      <Box/>
-      <Box/>
-      <Box/>
-      <Box/>
+      <View style={{alignItems:'center'}}>
+        <Box/>
+        <View style={{flex:1, flexDirection:'row'}}>
+          <Box/>
+          <Box/>
+          <Box/>
+        </View>
+        <Box/>
+        <Box/>
+      </View>
       <Box/>
     </View>
   )

@@ -32,9 +32,9 @@ const settings =  {
 const ProfileScreen = (props)=>{
   return (
     <View style={styles.container}>
-      <View style={{backgroundColor:'gray', width:120, height:120,}}>
+      <View style={{backgroundColor:'gray', width:120, height:120, borderRadius:80, marginBottom:20, alignSelf:'center'}}>
       </View>
-      <Text style={{fontSize:26,}}>
+      <Text style={{fontSize:26,fontWeight:'100', marginBottom:30, alignSelf:'center'}}>
         Chuck Norris
       </Text>
       {
@@ -56,14 +56,23 @@ const ProfileScreen = (props)=>{
 
 const styles = StyleSheet.create({
   setting:{
+    flexDirection:'row',
+    borderBottomColor: '#d8d8d8',
+    borderBottomWidth: 1,
+    padding: 20,
   },
   settingProp:{
+    width:70,
     color:'#888',
     marginRight:10,
+  },
+  settingVal:{
+    flex:0.8,
   },
   container: {
     flex:1,
     backgroundColor: 'white',
+    marginTop:30,
   },
 });
 

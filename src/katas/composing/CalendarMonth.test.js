@@ -63,13 +63,18 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   week:{
+    flexDirection:'row',
   },
   blank:{
     backgroundColor:'transparent',
     margin:1,
+    flex:1,
   },
   day:{
-     margin:1,
+    margin:1,
+    flex:1,
+    borderColor:'white',
+    borderRadius:2,
   },
   selected:{
     borderColor:'gray',
@@ -79,6 +84,8 @@ const styles = StyleSheet.create({
     color:'red',
   },
   dayText:{
+    padding:5,
+    alignSelf:'center',
   }
 })
 

@@ -16,9 +16,12 @@ const chart = [11, 50, 2, 42, 10, 8]
 
 //TODO: remove the text element and replace it with a real bar
 const Bar = (props)=>{
+  const max = R.reduce(Math.max, 0, chart)
+  const ratio = props.val / max
   return(
     <View>
-      <Text>Bar!</Text>
+      <View style={{flex:(1-ratio)}}></View>
+      <View style={[styles.bar,{flex:ratio}]}></View>
     </View>
   )
 }
@@ -50,7 +53,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors[1],
   },
   chart:{
-     height:100,
+    height:100,
+    flexDirection:'row',
   },
   bar:{
     backgroundColor:'red',

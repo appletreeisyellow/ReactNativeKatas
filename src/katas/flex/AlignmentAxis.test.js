@@ -24,9 +24,13 @@ const AlignmentAxis= (props)=>{
   return (
     <View style={styles.container}>
       <Box />
-      <Box />
-      <Box />
-      <Box />
+      <View>
+        <View style={{alignItems:'flex-end'}}>
+          <Box />
+          <Box />
+        </View>
+        <Box />
+      </View>
     </View>
   )
 }
@@ -38,6 +42,7 @@ const styles = StyleSheet.create({
   container: {
     flex:1,
     backgroundColor: colors[2],
+    justifyContent: 'space-between',
   },
   text:{
     color: 'white',
